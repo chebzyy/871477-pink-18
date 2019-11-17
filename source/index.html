@@ -15,16 +15,16 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a class="site-list__link--main">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link--photo" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__link--form" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          <a class="site-list__link--academy" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
         </li>
       </ul>
     </nav>
@@ -36,16 +36,16 @@
       <a class="download__button" href="#">Скачать приложение</a>
       <ul class="download__list ">
         <li class="download__item">
-          <a class="download__mac" href="#">MacOS</a>
+          <a class="download__mac--mac" href="#">MacOS</a>
         </li>
-        <li class="download__item">
+        <li class="download__item--android">
           <a class="download__android" href="#">Android</a>
         </li>
-        <li class="download__item">
+        <li class="download__item--windows">
           <a class="download__windows" href="#">Windows</a>
         </li>
       </ul>
-      <p class="download__decription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -90,12 +90,21 @@
       <div class="price__table">
         <h3 class="price__name">Стандарт</h3>
         <p class="price__cost">3,99 USD</p>
-        <ul class="price__list">
-          <li class="price__item">Розовый фильтр</li>
-          <li class="price__item">Смайлики</li>
-          <li class="price__item">Комментарии</li>
-        </ul>
-        <p class="price__toggles slider__toggles">
+        <table class="price__list">
+          <tr>
+            <td class="price__item">Розовый фильтр</td>
+            <td class="price__availability">Да</td>
+          </tr>
+          <tr>
+              <td class="price__item">Смайлики</td>
+              <td class="price__availability">Да</td>
+          </tr>
+          <tr>
+              <td class="price__item">Комментарии</td>
+              <td class="price__availability">Нет</td>
+          </tr>
+        </table>
+        <p class="price__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -115,9 +124,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo"><img class="page-footer__logo-image" src="img/logo.svg" width="147" height="40"
-        alt="Приложение Pink"></a>
-    <ul class="social__list">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="img/logo.svg" width="147" height="40" alt="Приложение Pink">
+    </a>
+    <ul class="social">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="#">Твиттер</a>
       </li>
